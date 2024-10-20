@@ -11,46 +11,49 @@
         <h1>SAURABH CHHILLAR CALCULATOR PROJECT</h1>
     </header>
 
-    <div class="calculator">
-        <input type="text" id="display" disabled aria-label="Calculator display">
-        <div class="buttons">
-            <button onclick="clearDisplay()" aria-label="Clear Display">C</button>
-            <button onclick="appendNumber('/')">/</button>
-            <button onclick="appendNumber('*')">*</button>
-            <button onclick="deleteLast()">DEL</button>
-
-            <button onclick="appendNumber('7')">7</button>
-            <button onclick="appendNumber('8')">8</button>
-            <button onclick="appendNumber('9')">9</button>
-            <button onclick="appendNumber('-')">-</button>
-
-            <button onclick="appendNumber('4')">4</button>
-            <button onclick="appendNumber('5')">5</button>
-            <button onclick="appendNumber('6')">6</button>
-            <button onclick="appendNumber('+')">+</button>
-
-            <button onclick="appendNumber('1')">1</button>
-            <button onclick="appendNumber('2')">2</button>
-            <button onclick="appendNumber('3')">3</button>
-            <button onclick="calculate()">=</button>
-
-            <button onclick="appendNumber('0')" class="zero">0</button>
-            <button onclick="appendNumber('.')">.</button>
-            <button onclick="appendNumber('%')">%</button>
-            <button onclick="appendNumber('Math.sqrt(')">√</button>
-
-            <button onclick="memoryClear()">MC</button>
-            <button onclick="memoryAdd()">M+</button>
-            <button onclick="memorySubtract()">M-</button>
-            <button onclick="memoryRecall()">MR</button>
+    <div class="container">
+        <div id="history">
+            <h3>History</h3>
+            <ul id="history-list"></ul>
         </div>
-    </div>
 
-    <div id="history">
-        <h3>History</h3>
-        <ul id="history-list"></ul>
+        <div class="calculator">
+            <input type="text" id="display" disabled aria-label="Calculator display">
+            <div class="buttons">
+                <button onclick="clearDisplay()" aria-label="Clear Display">C</button>
+                <button onclick="appendNumber('/')">/</button>
+                <button onclick="appendNumber('*')">*</button>
+                <button onclick="deleteLast()">DEL</button>
+
+                <button onclick="appendNumber('7')">7</button>
+                <button onclick="appendNumber('8')">8</button>
+                <button onclick="appendNumber('9')">9</button>
+                <button onclick="appendNumber('-')">-</button>
+
+                <button onclick="appendNumber('4')">4</button>
+                <button onclick="appendNumber('5')">5</button>
+                <button onclick="appendNumber('6')">6</button>
+                <button onclick="appendNumber('+')">+</button>
+
+                <button onclick="appendNumber('1')">1</button>
+                <button onclick="appendNumber('2')">2</button>
+                <button onclick="appendNumber('3')">3</button>
+                <button onclick="calculate()">=</button>
+
+                <button onclick="appendNumber('0')" class="zero">0</button>
+                <button onclick="appendNumber('.')">.</button>
+                <button onclick="appendNumber('%')">%</button>
+                <button onclick="appendNumber('Math.sqrt(')">√</button>
+
+                <button onclick="memoryClear()">MC</button>
+                <button onclick="memoryAdd()">M+</button>
+                <button onclick="memorySubtract()">M-</button>
+                <button onclick="memoryRecall()">MR</button>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+
